@@ -5,9 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?t=st=1716625740~exp=1716629340~hmac=41154e7f720f3df9c719efcc0916393e1f2f099cf94b060ff4106472c4f2930e&w=740");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(147, 33, 296, 0.291);
 }
 
 .border{
@@ -15,6 +13,14 @@ body {
   border-width: 10px;
   
 }
+
+.font-size-xs { font-size: 10px; }
+.font-size-sm { font-size: 12px; }
+.font-size-md { font-size: 14px; }
+.font-size-lg { font-size: 16px; }
+.font-size-xl { font-size: 18px; }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
