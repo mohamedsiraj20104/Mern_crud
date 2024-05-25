@@ -12,7 +12,7 @@ export default function Todo() {
     const [editTitle, setEditTitle] = useState("");
     const [editDescription, setEditDesciption] = useState("");
 
-    const apiUrl = "https://mern-crud-pink-theta.vercel.app"
+    const apiUrl = "https://todo-backend-owik.onrender.com"
     
     const handleSubmit = () => {
         setError("")
@@ -141,20 +141,7 @@ export default function Todo() {
         <div className="row mt-3">
             <h3>Tasks</h3>
             <div className="col-md-6 w-100 h-75 ">
-            <p class="d-block d-sm-none text-8">This text is 8px on extra small devices.</p>
-
            
-            <p class="d-none d-sm-block d-md-none text-10">This text is 10px on small devices.</p>
-          
-     
-            <p class="d-none d-md-block d-lg-none text-12">This text is 12px on medium devices.</p>
-          
-          
-            <p class="d-none d-lg-block d-xl-none text-14">This text is 14px on large devices.</p>
-          
-
-            <p class="d-none d-xl-block text-16">This text is 16px on extra large devices.</p>
-          
           
 
                 <ul className="list-group ">
