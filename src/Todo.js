@@ -12,7 +12,7 @@ export default function Todo() {
     const [editTitle, setEditTitle] = useState("");
     const [editDescription, setEditDesciption] = useState("");
 
-    const apiUrl = "https://todo-backend-owik.onrender.com"
+    const apiUrl = "http://localhost:8000"
     
     const handleSubmit = () => {
         setError("")
@@ -141,6 +141,21 @@ export default function Todo() {
         <div className="row mt-3">
             <h3>Tasks</h3>
             <div className="col-md-6 w-100 h-75 ">
+            <p class="d-block d-sm-none text-8">This text is 8px on extra small devices.</p>
+
+           
+            <p class="d-none d-sm-block d-md-none text-10">This text is 10px on small devices.</p>
+          
+     
+            <p class="d-none d-md-block d-lg-none text-12">This text is 12px on medium devices.</p>
+          
+          
+            <p class="d-none d-lg-block d-xl-none text-14">This text is 14px on large devices.</p>
+          
+
+            <p class="d-none d-xl-block text-16">This text is 16px on extra large devices.</p>
+          
+          
 
                 <ul className="list-group ">
                     { 
@@ -148,8 +163,20 @@ export default function Todo() {
                     <div className="d-flex flex-column me-2" key={index}>
                         {
                             editId == -1 || editId !==  item._id ? <>
-                                <span className="fw-bold" style={{ fontSize: '20px'}}>{item.title}</span>
-                                <span>{item.description}</span>
+                            <span className="fw-bold d-block d-sm-none font-size-sm">{item.title}</span>
+                            <span className="d-block d-sm-none font-size-sm">{item.description}</span>
+            
+                            <span className="fw-bold d-none d-sm-block d-md-none font-size-md">{item.title}</span>
+                            <span className="d-none d-sm-block d-md-none font-size-md">{item.description}</span>
+            
+                            <span className="fw-bold d-none d-md-block d-lg-none font-size-lg">{item.title}</span>
+                            <span className="d-none d-md-block d-lg-none font-size-lg">{item.description}</span>
+            
+                            <span className="fw-bold d-none d-lg-block d-xl-none font-size-xl">{item.title}</span>
+                            <span className="d-none d-lg-block d-xl-none font-size-xl">{item.description}</span>
+            
+                            <span className="fw-bold d-none d-xl-block font-size-xl">{item.title}</span>
+                            <span className="d-none d-xl-block font-size-xl">{item.description}</span>
                             </> : <>
                             <div className="form-group d-flex gap-2">
                                 <input placeholder="Title" onChange={(e) => setEditTitle(e.target.value)} value={editTitle} className="form-control" type="text" />
